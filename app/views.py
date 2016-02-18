@@ -6,5 +6,5 @@ def main():
     return "hello world!"
 
 @app.route("/test")
-def main():
+def test_page():
     return "Test Page."
