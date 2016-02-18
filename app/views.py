@@ -1,10 +1,11 @@
 from app import app
 
 
-@app.route("/")
-def main():
-    return "hello world!"
+@app.route('/')
+def hello():
+    return "Hello World!"
 
-@app.route("/test")
-def test_page():
-    return "Test Page."
+
+@app.route('/<name>')
+def hello_name(name):
+    return "Hello {}!".format(name)
